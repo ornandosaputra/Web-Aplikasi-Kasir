@@ -587,6 +587,38 @@ align-self:center;
   display:none;
   margin-top:-5px;
 }
+.demo-account{
+
+  background:#334155;
+
+  border:1px solid #475569;
+
+  border-radius:12px;
+
+  padding:12px;
+
+  text-align:center;
+
+  margin-top:5px;
+}
+
+.demo-account h4{
+
+  color:#22c55e;
+
+  margin-bottom:8px;
+
+  font-size:14px;
+}
+
+.demo-account p{
+
+  color:#cbd5e1;
+
+  font-size:13px;
+
+  margin:4px 0;
+}
 
     
 
@@ -729,6 +761,15 @@ align-self:center;
            <p class="error-text" id="loginError">
   ❌ Username atau password salah
 </p>
+<div class="demo-account">
+
+  <h4>Demo Account</h4>
+
+  <p>Username: <strong>demo</strong></p>
+
+  <p>Password: <strong>demo123</strong></p>
+
+</div>
 
     <button onclick="loginKasir()">
       Masuk
@@ -1436,8 +1477,8 @@ function loginKasir(){
     passwordInput.value;
 
   if(
-    username === 'ornando' &&
-    password === '123'
+    username === 'demo' &&
+    password === 'demo123'
   ){
 
     document.getElementById('loginScreen')
